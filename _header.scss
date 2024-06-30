@@ -1,0 +1,28 @@
+header {
+    background-color: $primary-color; /* Use variable for primary color */
+    color: white;
+    padding: 1em 0;
+
+    .container {
+        @include flex-center;
+        flex-direction: column;
+
+        h1 {
+            margin-bottom: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 0 1em;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+footer {
+    background-color: $footer-bg-color; /* Use variable for footer background color */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+
+    .footer-sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        .footer-section {
+            width: 100%;
+            max-width: 300px;
+            text-align: left;
+            margin-bottom: 30px;
+
+            .contact-section {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .footer-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 20px;
+
+                    .contact-button {
+                        background-color: $footer-bg-color; /* Use variable for footer background color */
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                        padding: 15px;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        transition: background 0.3s, transform 0.3s;
+                        width: 100%;
+
+                        &:hover {
+                            background: darken($footer-bg-color, 10%);
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        margin-top: 20px;
+
+        a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #E74C3C;
+            }
+        }
+    }
+
+    form {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: $footer-bg-color; /* Use variable for footer background color */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: auto;
+            align-self: flex-start;
+
+            &:hover {
+                background: darken($footer-bg-color, 10%);
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
